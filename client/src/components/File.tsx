@@ -15,8 +15,14 @@ export default function File(
       <motion.img
         src="file.svg"
         draggable={false}
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
+        initial={{ 
+          opacity: 0,
+          display: "none",
+        }}
+        animate={{ 
+          opacity: 1,
+          display: "block",
+        }}
         transition={{ delay: 0.8, duration: 0.5 }}
         onDoubleClick={() => {
           setWindowOpen(true);
