@@ -6,6 +6,7 @@ import Window from "@/components/Window";
 import { MouseParallaxContainer, MouseParallaxChild } from "react-parallax-mouse";
 import { useState } from "react";
 import HomePage from "@/components/HomePage";
+import Draggable from "react-draggable";
 
 export default function Home() {
   const [windowOpen, setWindowOpen] = useState(false);
@@ -125,10 +126,10 @@ export default function Home() {
         <File setWindowOpen={setWindowOpen} className="absolute left-[calc(50%-125px)] top-[calc(50%+140px)]" />
 
         {windowOpen ?
-          <Window setWindowOpen={setWindowOpen} className="absolute left-[calc(50%-500px)] top-[calc(50%-180px)]" />
+          <Window setWindowOpen={setWindowOpen} className="" />
           : <></>}
       </MouseParallaxContainer>
-
+      
       <HomePage className="p-4 md:w-1/2 lg:hidden" />
     </>
   );

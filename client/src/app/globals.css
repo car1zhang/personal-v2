@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 ::selection {
-  background: #281d3e;
+  background: rgba(108, 80, 163, 0.3);
 }
