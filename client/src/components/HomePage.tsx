@@ -3,7 +3,7 @@ import clsx from "clsx";
 
 export default function HomePage({ className }: { className: string }) {
   return (
-    <div className={clsx("bg-black flex flex-col gap-8", className)}>
+    <div className={clsx("flex flex-col gap-8", className)}>
       <div className="flex flex-col gap-4 tracking-wide leading-relaxed font-light">
         <p>hi. my name is carl. </p>
         <p>i solve problems and craft tools. i&apos;m currently building product at <a href="https://www.usebutler.app/" target="_blank" className="underline underline-offset-2 decoration-highlight decoration-2 hover:text-light hover:decoration-dark transition">butler</a> and i&apos;ll (likely) be studying <a href="https://cs.uwaterloo.ca/" target="_blank" className="underline underline-offset-2 decoration-highlight decoration-2 hover:text-light hover:decoration-dark transition">cs at uwaterloo</a> this fall. </p>

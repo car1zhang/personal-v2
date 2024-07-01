@@ -16,7 +16,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={plex.className + " flex flex-col items-center justify-center bg-black text-white h-screen overflow-hidden"}>
+      <body className={plex.className + " flex flex-col items-center justify-center bg-black text-white overflow-y-auto"}>
 
         {children}
       
