@@ -7,7 +7,7 @@ export default function HomePage({ className }: { className: string }) {
       <div className="flex flex-col gap-4 tracking-wide leading-relaxed font-light">
         <p>hi. my name is carl. </p>
         <p>i solve problems and craft tools. i&apos;m currently building product at <a href="https://www.usebutler.app/" target="_blank" className="underline underline-offset-2 decoration-highlight decoration-2 hover:text-light hover:decoration-dark transition">butler</a> and i&apos;ll (likely) be studying <a href="https://cs.uwaterloo.ca/" target="_blank" className="underline underline-offset-2 decoration-highlight decoration-2 hover:text-light hover:decoration-dark transition">cs at uwaterloo</a> this fall. </p>
-        <p>this site is an active wip. in the meantime, you can reach me at <a href="mailto:zhang.carl.x@gmail.com" className="underline underline-offset-2 decoration-highlight decoration-2 hover:text-light hover:decoration-dark transition">zhang.carl.x@gmail.com</a> or via the platforms below.</p>
+        <p>this site is an active wip. in the meantime, you can reach me at <a href="mailto:carl@usebutler.app" className="underline underline-offset-2 decoration-highlight decoration-2 hover:text-light hover:decoration-dark transition">carl@usebutler.app</a> or via the platforms below.</p>
       </div>
       <div className="flex gap-8">
         <a href="https://www.linkedin.com/in/car1zhang/" target="_blank" className="hover:text-light transition">
