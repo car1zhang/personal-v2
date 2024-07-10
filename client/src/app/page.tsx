@@ -4,17 +4,31 @@ import { motion } from "framer-motion";
 import File from "@/components/File";
 import Window from "@/components/Window";
 import { MouseParallaxContainer, MouseParallaxChild } from "react-parallax-mouse";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import HomePage from "@/components/HomePage";
 
 export default function Home() {
   const [windowOpen, setWindowOpen] = useState(false);
+
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkIfMobile = () => setIsMobile(window.innerWidth < 768);
+
+    checkIfMobile();
+    window.addEventListener('resize', checkIfMobile);
+
+    return () => {
+      window.removeEventListener('resize', checkIfMobile);
+    };
+  }, []);
 
   return (
     <>
       <MouseParallaxContainer
         className="relative background-black h-screen w-screen overflow-y-auto md:overflow-y-hidden"
         resetOnLeave
+        containerStyle={isMobile ? { overflowY: "auto" } : undefined}
       >
         <div className="h-[800px] w-[800px] absolute left-[calc(50%-250px)] top-[150px] md:h-auto md:w-auto md:left-[calc(50%-280px)] md:top-[calc(50%-120px)]">
           <img src="./grid.png" draggable={false} />
@@ -24,6 +38,7 @@ export default function Home() {
           className="absolute h-[600px] w-[600px] left-[calc(50%-310px)] top-[-115px] md:h-auto md:w-auto md:left-[calc(50%-462px)] md:top-[calc(50%-555px)]"
           factorX={0.005}
           factorY={0.005}
+          
         >
           <motion.img
             src="./glow.svg"
