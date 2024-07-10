@@ -6,7 +6,7 @@ export default function HomePage({ className }: { className: string }) {
     <div className={clsx("flex flex-col gap-8", className)}>
       <div className="flex flex-col gap-4 tracking-wide leading-relaxed font-light">
         <p>hi. my name is carl. </p>
-        <p>i solve problems and craft tools. i&apos;m currently building product at <a href="https://www.usebutler.app/" target="_blank" className="underline underline-offset-2 decoration-highlight decoration-2 hover:text-light hover:decoration-dark transition">butler</a> and i&apos;ll (likely) be studying <a href="https://cs.uwaterloo.ca/" target="_blank" className="underline underline-offset-2 decoration-highlight decoration-2 hover:text-light hover:decoration-dark transition">cs at uwaterloo</a> this fall. </p>
+        <p>i solve problems and craft tools. i&apos;m currently building product at <a href="https://www.usebutler.app/" target="_blank" className="underline underline-offset-2 decoration-highlight decoration-2 hover:text-light hover:decoration-dark transition">butler</a>.</p>
         <p>this site is an active wip. in the meantime, you can reach me at <a href="mailto:carl@usebutler.app" className="underline underline-offset-2 decoration-highlight decoration-2 hover:text-light hover:decoration-dark transition">carl@usebutler.app</a> or via the platforms below.</p>
       </div>
       <div className="flex gap-8">

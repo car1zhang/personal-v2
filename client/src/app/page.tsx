@@ -6,7 +6,6 @@ import Window from "@/components/Window";
 import { MouseParallaxContainer, MouseParallaxChild } from "react-parallax-mouse";
 import { useState } from "react";
 import HomePage from "@/components/HomePage";
-import Draggable from "react-draggable";
 
 export default function Home() {
   const [windowOpen, setWindowOpen] = useState(false);
@@ -14,11 +13,7 @@ export default function Home() {
   return (
     <>
       <MouseParallaxContainer
-        className="relative background-black h-screen w-screen overflow-y-auto"
-        containerStyle={{
-          // @ts-ignore
-          "overflow-y": "auto",
-        }}
+        className="relative background-black h-screen w-screen overflow-y-auto md:overflow-y-hidden"
         resetOnLeave
       >
         <div className="h-[800px] w-[800px] absolute left-[calc(50%-250px)] top-[150px] md:h-auto md:w-auto md:left-[calc(50%-280px)] md:top-[calc(50%-120px)]">
